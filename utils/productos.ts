@@ -27,7 +27,7 @@ export interface Discrepancia {
 }
 
 /**
- * Escucha las respuestas de red que corresponden a la búsqueda/catálogo de Liverpool
+ * Escucha las respuestas de red que corresponden a la búsqueda/catálogo de Liverpool con los filtros de los productos aplicados asi como los colores y rango de precios
  */
 export function capturarRespuestasJson(page: Page) {
   const payloads: PayloadsInterceptados[] = [];

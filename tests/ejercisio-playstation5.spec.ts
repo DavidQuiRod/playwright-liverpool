@@ -76,10 +76,10 @@ test('Extraer 5 productos de PS5 y validar cruzadamente UI vs Red', async ({ pag
     console.log(`Coincidencias encontradas: ${coincidencias.length}/5`);
     
     if (discrepancias.length > 0) {
-        console.warn('\n⚠️ Discrepancias / Diferencias detectadas:');
+        console.warn('\n Discrepancias / Diferencias detectadas:');
         discrepancias.forEach(d => console.warn(` - [Producto UI #${d.posicionUI}] [${d.tipo}]: ${d.detalle}`));
     } else {
-        console.log('✅ Sin discrepancias detectadas entre la UI y la respuesta de Red.');
+        console.log(' Sin discrepancias detectadas entre la UI y la respuesta de Red.');
     }
 
     // 8. Adjuntar reportes de evidencia al testInfo de Playwright
